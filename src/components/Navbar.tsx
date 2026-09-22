@@ -12,7 +12,7 @@ function Navbar() {
   ]
 
   return (
-    <nav className="relative z-50 w-full border-b border-white/10 bg-black">
+    <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-black">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <NavLink
@@ -62,7 +62,7 @@ function Navbar() {
 
         {/* Mobile Floating Menu */}
         {menuOpen && (
-          <div className="absolute right-6 top-full z-50 mt-3 w-48 rounded-xl border border-white/20 bg-black/10 p-5 shadow-2xl backdrop-blur-xl md:hidden">
+          <div className="absolute right-6 top-full z-50 mt-0 w-48 rounded-xl border border-white/20 bg-black/10 p-5 shadow-2xl backdrop-blur-xl md:hidden">
             <div className="flex flex-col items-end gap-5 text-right text-sm">
               {navLinks.map((link) => (
                 <NavLink
