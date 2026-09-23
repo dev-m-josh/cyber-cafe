@@ -65,7 +65,7 @@ function Services() {
     <div className="min-h-screen bg-[#0a0e14] px-6 py-24 text-white sm:px-10 lg:px-16">
       <div className="mx-auto max-w-7xl">
 
-        <div className="max-w-2xl">
+        <div className="max-w-2xl fade-up">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
             What We Offer
           </p>
@@ -85,14 +85,14 @@ function Services() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 fade-up">
           {services.map((service) => {
             const Icon = service.icon
 
             return (
               <div
                 key={service.title}
-                className="group flex flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-cyan-400/[0.05]"
+                className="group flex flex-col rounded-2xl border border-white/10 bg-white/3 p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-cyan-400/5"
               >
                 <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-400 transition group-hover:bg-cyan-400 group-hover:text-black">
                   <Icon className="h-6 w-6" />
@@ -125,7 +125,7 @@ function Services() {
           })}
         </div>
 
-        <div className="mt-12 rounded-2xl border border-cyan-400/20 bg-cyan-400/[0.05] px-6 py-8 text-center sm:px-10">
+        <div className="mt-12 rounded-2xl border border-cyan-400/20 bg-cyan-400/5 px-6 py-8 text-center fade-up sm:px-10">
           <h2 className="text-2xl font-bold sm:text-3xl">
             Not sure what you need?
           </h2>
@@ -153,3 +153,4 @@ function Services() {
 }
 
 export default Services
+

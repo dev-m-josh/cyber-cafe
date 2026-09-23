@@ -50,10 +50,9 @@ function Home() {
   return (
     <div className="bg-[#0a0e14] text-white antialiased selection:bg-cyan-400 selection:text-black">
 
-      {/* Hero Section */}
       <section
         id="home"
-        className="relative flex min-h-screen items-center overflow-hidden px-6 pt-[120px] pb-10 sm:px-10 sm:pt-[73px] sm:pb-0 lg:px-16"
+        className="relative flex min-h-screen items-center overflow-hidden px-6 pt-30 pb-10 sm:px-10 sm:pt-18.25 sm:pb-0 lg:px-16"
       >
         <div className="absolute inset-0 z-0">
           <img
@@ -63,38 +62,34 @@ function Home() {
           />
         </div>
 
-        <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#0a0e14] via-[#0a0e14]/85 to-[#0a0e14]/40" />
+        <div className="absolute inset-0 z-10 bg-linear-to-r from-[#0a0e14] via-[#0a0e14]/85 to-[#0a0e14]/40" />
 
-        <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#0a0e14] via-transparent to-[#0a0e14]/60" />
+        <div className="absolute inset-0 z-10 bg-linear-to-t from-[#0a0e14] via-transparent to-[#0a0e14]/60" />
 
         <div className="pointer-events-none absolute left-1/3 top-1/2 z-20 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/15 blur-3xl" />
 
         <div className="relative z-30 mx-auto w-full max-w-7xl">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl fade-up">
 
-            {/* Badge */}
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300">
               <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-400" />
               Fast • Reliable • Affordable
             </div>
 
-            {/* Heading */}
             <h1 className="text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
               Your Local
               <br />
-              <span className="bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 Digital Hub
               </span>
             </h1>
 
-            {/* Description */}
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-300">
               Printing, photocopying, scanning, typing, online government
               services and more. Everything you need, all in one place —
               powered by high-speed fiber internet.
             </p>
 
-            {/* Buttons */}
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <Link
                 to="/services"
@@ -115,7 +110,6 @@ function Home() {
               </Link>
             </div>
 
-            {/* Stats */}
             <div className="mt-10 grid grid-cols-2 gap-5 sm:mt-12 sm:grid-cols-4 sm:gap-6">
               {stats.map((s) => (
                 <div
@@ -137,12 +131,10 @@ function Home() {
         </div>
       </section>
 
-      {/* Why Choose CyberHub */}
       <section className="px-6 py-20 sm:px-10 lg:px-16">
         <div className="mx-auto max-w-7xl">
 
-          {/* Section Header */}
-          <div className="max-w-2xl">
+          <div className="max-w-2xl fade-up">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
               Why CyberHub
             </p>
@@ -162,15 +154,14 @@ function Home() {
             </p>
           </div>
 
-          {/* Benefits */}
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 fade-up">
             {benefits.map((benefit) => {
               const Icon = benefit.icon
 
               return (
                 <div
                   key={benefit.title}
-                  className="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-cyan-400/[0.05]"
+                  className="group rounded-2xl border border-white/10 bg-white/3 p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-cyan-400/5"
                 >
                   <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-400 transition group-hover:bg-cyan-400 group-hover:text-black">
                     <Icon className="h-6 w-6" />
@@ -191,17 +182,15 @@ function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="px-6 pb-20 sm:px-10 lg:px-16">
         <div className="mx-auto max-w-7xl">
-          <div className="relative overflow-hidden rounded-3xl border border-cyan-400/20 bg-cyan-400/[0.06] px-6 py-12 sm:px-10 sm:py-14 lg:px-14">
 
-            {/* Background Glow */}
+          <div className="fade-up relative overflow-hidden rounded-3xl border border-cyan-400/20 bg-cyan-400/6 px-6 py-12 sm:px-10 sm:py-14 lg:px-14">
+
             <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl" />
 
             <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
 
-              {/* CTA Text */}
               <div className="max-w-2xl">
                 <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
                   Need a Service?
@@ -219,7 +208,6 @@ function Home() {
                 </p>
               </div>
 
-              {/* CTA Buttons */}
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
                 <a
                   href="https://wa.me/254748894542"
@@ -244,6 +232,7 @@ function Home() {
 
             </div>
           </div>
+
         </div>
       </section>
 

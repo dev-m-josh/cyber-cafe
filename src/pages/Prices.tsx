@@ -67,7 +67,7 @@ function Prices() {
     <div className="min-h-screen bg-[#0a0e14] px-6 py-24 text-white sm:px-10 lg:px-16">
       <div className="mx-auto max-w-7xl">
 
-        <div className="max-w-2xl">
+        <div className="max-w-2xl fade-up">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
             Simple Pricing
           </p>
@@ -86,7 +86,7 @@ function Prices() {
           </p>
         </div>
 
-        <div className="mt-14 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
+        <div className="mt-14 overflow-hidden rounded-2xl border border-white/10 bg-white/3 fade-up">
 
           <div className="hidden grid-cols-[1fr_auto_auto] gap-6 border-b border-white/10 px-6 py-4 text-xs font-semibold uppercase tracking-wider text-gray-500 sm:grid">
             <span>Service</span>
@@ -98,7 +98,7 @@ function Prices() {
             {prices.map((item, index) => (
               <div
                 key={item.service}
-                className={`grid gap-3 px-6 py-5 transition hover:bg-cyan-400/[0.04] sm:grid-cols-[1fr_auto_auto] sm:items-center sm:gap-6 ${
+                className={`grid gap-3 px-6 py-5 transition hover:bg-cyan-400/4 sm:grid-cols-[1fr_auto_auto] sm:items-center sm:gap-6 ${
                   index !== prices.length - 1
                     ? 'border-b border-white/10'
                     : ''
@@ -132,7 +132,7 @@ function Prices() {
           </div>
         </div>
 
-        <div className="mt-8 rounded-xl border border-cyan-400/20 bg-cyan-400/[0.05] px-5 py-4 text-sm leading-relaxed text-gray-400">
+        <div className="mt-8 rounded-xl border border-cyan-400/20 bg-cyan-400/5 px-5 py-4 text-sm leading-relaxed text-gray-400 fade-up">
           <span className="font-semibold text-cyan-400">
             Note:
           </span>{' '}
@@ -140,7 +140,7 @@ function Prices() {
           or document. Contact us for an exact quote before proceeding.
         </div>
 
-        <div className="mt-10 flex flex-col gap-6 rounded-2xl border border-white/10 bg-white/[0.03] p-7 sm:p-8 lg:flex-row lg:items-center lg:justify-between">
+        <div className="mt-10 flex flex-col gap-6 rounded-2xl border border-white/10 bg-white/3 p-7 fade-up sm:p-8 lg:flex-row lg:items-center lg:justify-between">
 
           <div>
             <h2 className="text-2xl font-bold">
