@@ -43,9 +43,13 @@ function Navbar() {
         </div>
 
         {/* Desktop WhatsApp Button */}
-        <button className="hidden rounded-lg bg-cyan-400 px-4 py-2 text-sm font-semibold text-black transition hover:bg-cyan-300 md:block">
+        <a 
+            href="https://wa.me/254748894542"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden rounded-lg bg-cyan-400 px-4 py-2 text-sm font-semibold text-black transition hover:bg-cyan-300 md:block">
           WhatsApp Us
-        </button>
+        </a>
 
         {/* Mobile Menu Button */}
         <button
@@ -80,10 +84,14 @@ function Navbar() {
                   {link.name}
                 </NavLink>
               ))}
-
-              <button className="w-full rounded-lg bg-cyan-400 px-4 py-2 font-semibold text-black transition hover:bg-cyan-300">
+                <a
+                href="https://wa.me/254748894542"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full rounded-lg bg-cyan-400 px-4 py-2 text-center font-semibold text-black transition hover:bg-cyan-300"
+                >
                 WhatsApp Us
-              </button>
+                </a>
             </div>
           </div>
         )}
