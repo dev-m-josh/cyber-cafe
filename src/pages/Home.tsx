@@ -2,6 +2,7 @@ import {
   ArrowRight,
   CheckCircle,
   Clock,
+  MessageCircle,
   Phone,
   ShieldCheck,
   Zap,
@@ -187,6 +188,62 @@ function Home() {
             })}
           </div>
 
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="px-6 pb-20 sm:px-10 lg:px-16">
+        <div className="mx-auto max-w-7xl">
+          <div className="relative overflow-hidden rounded-3xl border border-cyan-400/20 bg-cyan-400/[0.06] px-6 py-12 sm:px-10 sm:py-14 lg:px-14">
+
+            {/* Background Glow */}
+            <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl" />
+
+            <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+
+              {/* CTA Text */}
+              <div className="max-w-2xl">
+                <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-400">
+                  Need a Service?
+                </p>
+
+                <h2 className="text-3xl font-bold sm:text-4xl">
+                  We're Ready to
+                  <span className="text-cyan-400"> Help.</span>
+                </h2>
+
+                <p className="mt-4 leading-relaxed text-gray-400">
+                  Whether you need a document printed, an online service
+                  completed or simply have a question, get in touch with us
+                  and we'll help you get it done.
+                </p>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
+                <a
+                  href="https://wa.me/254748894542"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center justify-center gap-2 rounded-lg bg-cyan-400 px-4 py-1 font-semibold text-black transition hover:bg-cyan-300"
+                >
+                  <MessageCircle className="h-4 w-4" />
+
+                  WhatsApp Us
+
+                  <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                </a>
+
+                <Link
+                  to="/services"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 px-4 py-1 font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-400"
+                >
+                  View Services
+                </Link>
+              </div>
+
+            </div>
+          </div>
         </div>
       </section>
 
