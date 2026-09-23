@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Services from './pages/Services'
 import Prices from './pages/Prices'
 import Contact from './pages/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path="/prices" element={<Prices />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+
+        <Footer />
       </div>
     </BrowserRouter>
   )
